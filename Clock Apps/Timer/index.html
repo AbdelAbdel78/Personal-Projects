@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>This is my timer app.</h1>
+    <h1 id="title">This is my timer app</h1>
+
+    <div id="container">
+        <div id="controlPanel">
+            <div id="inputPanel">
+                <label for="hours">Hours:</label>
+                <input type="number" name="hours" id="hours" min="0" max="99" value="0">
+                <label for="minutes">Minutes:</label>
+                <input type="number" name="minutes" id="minutes" min="0" max="59" value="0">                <label for="seconds">Seconds:</label>
+                <input type="number" name="seconds" id="seconds" min="0" max="59" value="0">
+            </div>
+            <br>
+            <div id="buttonPanel">
+                <input type="button" id="toggleButton" class="start" onclick="toggle()" value="Start">
+                <input type="button" id="resetButton" class="reset" onclick="reset()" value="Reset">
+            </div>
+        </div>
+        <div id="timerDisplay">
+            00:00.00
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
