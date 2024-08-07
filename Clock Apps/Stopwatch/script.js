@@ -37,11 +37,12 @@ function resetLap(){
         tableBody.innerHTML = '';
         lapTable.style.opacity = 0;
         clearInterval(timer);
+        resetLapButton.textContent = "Lap"
         startTime = 0;
         elapsedTime = 0;
         lapCount = 0;
         isRunning = false;
-        stopwatchDisplay.textContent = "00:00:00.00"
+        stopwatchDisplay.textContent = "00:00.00"
     }
 
     else{
