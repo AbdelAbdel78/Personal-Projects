@@ -16,7 +16,7 @@ function setup() {
   gravitySlider.position(10, 40);
   gravitySlider.style('width', '150px');
 
-  dampingSlider = createSlider(0.9, 1, 0.99, 0.01); // Damping slider
+  dampingSlider = createSlider(0.9, 1, 1, 0.01); // Damping slider
   dampingSlider.position(10, 70);
   dampingSlider.style('width', '150px');
 
@@ -48,6 +48,11 @@ function draw() {
   // Update and display the pendulum
   pendulum.update();
   pendulum.display();
+
+  // Display the current angular acceleration, angular velocity, and angle
+  text('Angular Acceleration: ' + pendulum.angularAcceleration.toFixed(4) + ' rad/s²', 10, height - 60);
+  text('Angular Velocity: ' + pendulum.angularVelocity.toFixed(4) + ' rad/s', 10, height - 40);
+  text('Angle: ' + pendulum.angle.toFixed(4) + ' rad', 10, height - 20);
 }
 
 // Pendulum class definition
