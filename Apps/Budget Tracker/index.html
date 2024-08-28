@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Budget Tracker</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1 id="title">This is my Budger Tracker App</h1>
+	<br>
+
+	<div id="inputContainer">
+		<div id="">
+			<input type="radio" id="incomeRadioBox" name="incomeOrExpense" value="income">
+			<label for="incomeRadioBox">Income</label>
+			<input type="radio" id="expenseRadioBox" name="incomeOrExpense" value="expense">
+			<label for="expenseRadioBox">Expense</label><br>
+		</div>
+		<input type="text" id="nameTextBox" placeholder="Name"><br>
+		<input type="number" id="amountTextBox" min="0" placeholder="Amount"><br>
+		<button type="submit" id="submitButton">Submit</button>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
