@@ -1,0 +1,10 @@
+
+
+.buttonExample {
+    background-color: lightskyblue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
